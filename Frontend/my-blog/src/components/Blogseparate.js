@@ -40,7 +40,7 @@ const Blogseparate = ({
 
   const deleteRequest = async () => {
     const res = axios
-      .delete(`https://localhost:5000/api/blog/${id}`)
+      .delete(`https://react-blog-il3c.onrender.com/api/blog/${id}`)
       .catch((err) => console.log(err));
 
       return await res.data

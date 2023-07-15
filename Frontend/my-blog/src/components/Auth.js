@@ -39,7 +39,7 @@ const Auth = () => {
 
   const sendRequest = async (type = "login") => {
     try {
-      let res = await axios.post(`http://localhost:5000/api/user/${type}`, {
+      let res = await axios.post(`https://react-blog-il3c.onrender.com/api/user/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,

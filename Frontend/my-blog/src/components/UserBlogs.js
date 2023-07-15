@@ -19,7 +19,7 @@ const UserBlogs = () => {
   const id = localStorage.getItem("userId");
   const sendRequest = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/blog/user/${id}`);
+      const res = await axios.get(`https://react-blog-il3c.onrender.com/api/blog/user/${id}`);
       return res.data;
     } catch (err) {
       console.log(err);
